@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nexus Core Académico — EdTech case study by Danny Echeverría.">
+<title>Nexus Core Académico — Danny Echeverría</title>
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="cs-nav" aria-label="Case study navigation">
+  <div class="cs-nav__inner">
+    <a href="index.html#work" class="cs-nav__back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Back to Work
+    </a>
+    <a href="index.html" class="cs-nav__logo">
+      <img src="Logo-Danjez.png" alt="Danny Echeverría" width="120" height="28">
+    </a>
+    <div class="cs-nav__badge">
+      <span class="cs-nav__badge-dot"></span>
+      Open to Work
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="cs-header">
+  <div class="cs-header__inner">
+    <div class="cs-header__tags anim">
+      <span class="cs-tag cs-tag--accent">EdTech</span>
+      <span class="cs-tag">UX Design</span>
+      <span class="cs-tag">UI Design</span>
+      <span class="cs-tag">Design System</span>
+      <span class="cs-tag">Mobile</span>
+    </div>
+    <h1 class="cs-header__title anim">Nexus Core Académico</h1>
+    <p class="cs-header__subtitle anim">A full-stack school administration platform — web app for administrators and teachers, mobile app for parents — covering enrollment, academic records, attendance, and communication.</p>
+    <div class="cs-meta anim">
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Role</p>
+        <p class="cs-meta__value">Lead Product Designer</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Industry</p>
+        <p class="cs-meta__value">EdTech / K-12</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Year</p>
+        <p class="cs-meta__value">2023</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Deliverables</p>
+        <p class="cs-meta__value">UX · UI · Design System · Mobile</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- COVER -->
+<div class="cs-cover anim">
+  <div class="cs-cover__image">
+    <div class="cs-cover__placeholder">Cover — Nexus Core Platform</div>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">Overview</p>
+  <h2 class="cs-section__title">One platform, three types of users, zero margin for confusion</h2>
+  <p class="cs-section__body">Nexus Core is a school administration system used by private K-12 institutions. It manages enrollment workflows, academic records, attendance, teacher scheduling, and parent communication — all in one platform.</p>
+  <p class="cs-section__body">The challenge: three distinct user types with completely different mental models. School administrators think in processes and reports. Teachers think in classroom-scale interactions. Parents think in individual child milestones. Designing one system that serves all three without complexity leaking between them was the core problem.</p>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Scope</p>
+    <p class="cs-callout__text">Web app (admin + teacher roles) + companion mobile app (parent role) + shared design system connecting both platforms.</p>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">01 — User Research</p>
+  <h2 class="cs-section__title">Three users, three completely different jobs to be done</h2>
+  <p class="cs-section__body">I conducted role-based research sessions: 4 administrators, 6 teachers, and 8 parents across 3 schools. The most important finding was that administrators and teachers had opposite mental models for the same data — what an administrator calls "enrollment status" is what a teacher calls "who's in my class."</p>
+  <div class="cs-grid cs-grid--3">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Admin persona — "Diego"</div>
+      <p class="cs-image__caption">School Administrator</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Teacher persona — "Lucia"</div>
+      <p class="cs-image__caption">Classroom Teacher</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Parent persona — "Adriana"</div>
+      <p class="cs-image__caption">Parent / Guardian</p>
+    </div>
+  </div>
+</section>
+
+<!-- WEB APP -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">02 — Web Application</p>
+  <h2 class="cs-section__title">Admin and teacher interfaces</h2>
+  <p class="cs-section__body">The web app uses a role-based layout system — the same navigation shell renders differently based on user role. Administrators see macro-level dashboards and management tools. Teachers see classroom-level views and grading interfaces. Permissions determine what each role can read and write.</p>
+  <div class="cs-image">
+    <div class="cs-image__placeholder">Admin dashboard — enrollment overview</div>
+    <p class="cs-image__caption">Administrator view — macro enrollment and records</p>
+  </div>
+  <div class="cs-grid cs-grid--2">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Teacher gradebook view</div>
+      <p class="cs-image__caption">Teacher role — classroom grading</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Enrollment management flow</div>
+      <p class="cs-image__caption">Admin role — enrollment workflow</p>
+    </div>
+  </div>
+</section>
+
+<!-- MOBILE APP -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">03 — Mobile Application</p>
+  <h2 class="cs-section__title">Parent-facing app — clarity over completeness</h2>
+  <p class="cs-section__body">The parent mobile app strips away administrative complexity entirely. Parents see only their child's information: grades, attendance, homework, and messages from teachers. The design principle was "one child, one screen" — no list views, no aggregation, just direct access to what parents actually check.</p>
+  <div class="cs-grid cs-grid--4">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder cs-image__placeholder--portrait">Home</div>
+      <p class="cs-image__caption">Child overview</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder cs-image__placeholder--portrait">Grades</div>
+      <p class="cs-image__caption">Academic record</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder cs-image__placeholder--portrait">Attendance</div>
+      <p class="cs-image__caption">Monthly calendar</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder cs-image__placeholder--portrait">Messages</div>
+      <p class="cs-image__caption">Teacher communication</p>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN SYSTEM -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">04 — Design System</p>
+  <h2 class="cs-section__title">One token set, two platforms</h2>
+  <p class="cs-section__body">I built a shared token system that both the web app and mobile app consume. Colors, typography scale, spacing, and border radius all live in a single source of truth — the platforms diverge at the component level, but share the same visual language.</p>
+  <div class="cs-grid cs-grid--2">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Web component library</div>
+      <p class="cs-image__caption">32 web components</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Mobile component library</div>
+      <p class="cs-image__caption">24 mobile components</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">05 — Results</p>
+  <h2 class="cs-section__title">Outcomes</h2>
+  <div class="cs-metrics">
+    <div class="cs-metric">
+      <p class="cs-metric__number">3</p>
+      <p class="cs-metric__label">Schools onboarded in the first semester</p>
+    </div>
+    <div class="cs-metric">
+      <p class="cs-metric__number">56</p>
+      <p class="cs-metric__label">Documented components across both platforms</p>
+    </div>
+    <div class="cs-metric">
+      <p class="cs-metric__number">4.4</p>
+      <p class="cs-metric__label">Parent app satisfaction score (out of 5)</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT NAV -->
+<nav class="cs-project-nav" aria-label="Project navigation">
+  <div class="cs-project-nav__inner">
+    <a href="rushmypassport.html" class="cs-project-nav__link">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <span class="cs-project-nav__label">Previous</span>
+        <span class="cs-project-nav__title">Rush My Passport — Design System</span>
+      </div>
+    </a>
+    <div class="cs-project-nav__center">
+      <a href="index.html#work" class="cs-project-nav__all">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        All Projects
+      </a>
+    </div>
+    <a href="admisiones.html" class="cs-project-nav__link cs-project-nav__link--next">
+      <div>
+        <span class="cs-project-nav__label">Next Project</span>
+        <span class="cs-project-nav__title">Admisiones by Eccole</span>
+      </div>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M6 12l4-4-4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</nav>
+
+<!-- FOOTER -->
+<footer class="cs-footer">
+  <div class="cs-footer__inner">
+    <a href="index.html" class="cs-footer__logo">
+      <img src="Logo-Danjez.png" alt="Danny Echeverría" width="100" height="24">
+    </a>
+    <p class="cs-footer__copy">© 2026 Danny Echeverría</p>
+    <a href="index.html#work" class="cs-footer__back">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Back to portfolio
+    </a>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('anim--visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

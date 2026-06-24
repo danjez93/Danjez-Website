@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Happiness Food — E-commerce redesign case study by Danny Echeverría.">
+<title>Happiness Food — Danny Echeverría</title>
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="cs-nav" aria-label="Case study navigation">
+  <div class="cs-nav__inner">
+    <a href="index.html#work" class="cs-nav__back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Back to Work
+    </a>
+    <a href="index.html" class="cs-nav__logo">
+      <img src="Logo-Danjez.png" alt="Danny Echeverría" width="120" height="28">
+    </a>
+    <div class="cs-nav__badge">
+      <span class="cs-nav__badge-dot"></span>
+      Open to Work
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="cs-header">
+  <div class="cs-header__inner">
+    <div class="cs-header__tags anim">
+      <span class="cs-tag cs-tag--accent">E-commerce</span>
+      <span class="cs-tag">UI Design</span>
+      <span class="cs-tag">CRO</span>
+      <span class="cs-tag">Design System</span>
+    </div>
+    <h1 class="cs-header__title anim">Happiness Food</h1>
+    <p class="cs-header__subtitle anim">Homepage redesign and conversion optimization for a food products e-commerce — reducing cognitive load in the purchase path and establishing a scalable UI system for the team.</p>
+    <div class="cs-meta anim">
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Role</p>
+        <p class="cs-meta__value">UI Designer</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Industry</p>
+        <p class="cs-meta__value">E-commerce / Food</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Year</p>
+        <p class="cs-meta__value">2022</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Deliverables</p>
+        <p class="cs-meta__value">UI Redesign · CRO · Design System</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- COVER -->
+<div class="cs-cover anim">
+  <div class="cs-cover__image">
+    <div class="cs-cover__placeholder">Cover — Happiness Food Homepage</div>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">Overview</p>
+  <h2 class="cs-section__title">A homepage that was doing too much — and converting too little</h2>
+  <p class="cs-section__body">Happiness Food sells natural and organic food products online. Their homepage had grown organically over two years — banners piled on top of banners, multiple competing CTAs, and a product grid that showed everything at once. Conversion rates were flat and bounce rates were high.</p>
+  <p class="cs-section__body">My brief was clear: redesign the homepage to focus attention on the purchase path, reduce visual noise, and lay the groundwork for a design system that would keep future additions consistent.</p>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Hypothesis</p>
+    <p class="cs-callout__text">"Users aren't converting because they can't find a clear path to purchase. Too many options presented equally = no decision made."</p>
+  </div>
+</section>
+
+<!-- ANALYSIS -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">01 — Analysis</p>
+  <h2 class="cs-section__title">Reading the data before touching the design</h2>
+  <p class="cs-section__body">I started by reviewing Hotjar session recordings and heatmaps from 200 sessions on the existing homepage. The data confirmed the hypothesis: users scrolled past the hero banner immediately (low engagement), clicked on product images but abandoned on the product page (a separate problem), and almost never interacted with the secondary navigation categories.</p>
+  <div class="cs-grid cs-grid--2">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Heatmap analysis — existing homepage</div>
+      <p class="cs-image__caption">Hotjar heatmap — 200 sessions</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Existing homepage — visual audit</div>
+      <p class="cs-image__caption">Current state: 11 competing visual elements above the fold</p>
+    </div>
+  </div>
+</section>
+
+<!-- BENCHMARKING -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">02 — Benchmarking</p>
+  <h2 class="cs-section__title">Learning from food e-commerce that converts</h2>
+  <p class="cs-section__body">I benchmarked 8 food and CPG e-commerce sites known for strong conversion: iHerb, Thrive Market, Trader Joe's online, and regional competitors. Common patterns in high performers: single hero CTA, category entry points below fold, social proof before product grid.</p>
+  <div class="cs-grid cs-grid--3">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">iHerb homepage pattern</div>
+      <p class="cs-image__caption">Benchmark 1</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Thrive Market layout</div>
+      <p class="cs-image__caption">Benchmark 2</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Pattern synthesis</div>
+      <p class="cs-image__caption">Common CRO patterns extracted</p>
+    </div>
+  </div>
+</section>
+
+<!-- REDESIGN -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">03 — Redesign</p>
+  <h2 class="cs-section__title">One path, clearly signed</h2>
+  <p class="cs-section__body">The redesign reduced the above-fold content to three elements: a hero image, a single benefit headline, and one primary CTA. Category navigation moved to a sticky strip below the hero. Social proof (ratings, customer count) was added before the product grid to reduce purchase anxiety.</p>
+  <div class="cs-image">
+    <div class="cs-image__placeholder">Redesigned homepage — full viewport</div>
+    <p class="cs-image__caption">Final design — focused hero + social proof + product grid</p>
+  </div>
+  <div class="cs-grid cs-grid--2">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Before / After — above the fold</div>
+      <p class="cs-image__caption">Hero section comparison</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Product card redesign</div>
+      <p class="cs-image__caption">New card layout — price hierarchy fixed</p>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN SYSTEM -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">04 — Design System</p>
+  <h2 class="cs-section__title">Preventing the next round of inconsistency</h2>
+  <p class="cs-section__body">Alongside the homepage redesign, I documented the UI components as a lightweight system — color tokens, type styles, and a component set for the most reused elements: product cards, buttons, form inputs, and the category strip. This gave the internal team a reference to maintain consistency in future additions.</p>
+  <div class="cs-grid cs-grid--2">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Color + typography tokens</div>
+      <p class="cs-image__caption">Brand token system</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Component library — core components</div>
+      <p class="cs-image__caption">18 components documented</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">05 — Results</p>
+  <h2 class="cs-section__title">Post-launch metrics</h2>
+  <div class="cs-metrics">
+    <div class="cs-metric">
+      <p class="cs-metric__number">+28%</p>
+      <p class="cs-metric__label">Homepage-to-product-page click rate</p>
+    </div>
+    <div class="cs-metric">
+      <p class="cs-metric__number">−18%</p>
+      <p class="cs-metric__label">Bounce rate reduction (30-day post-launch)</p>
+    </div>
+    <div class="cs-metric">
+      <p class="cs-metric__number">18</p>
+      <p class="cs-metric__label">Components in the new design system</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT NAV -->
+<nav class="cs-project-nav" aria-label="Project navigation">
+  <div class="cs-project-nav__inner">
+    <a href="admisiones.html" class="cs-project-nav__link">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <span class="cs-project-nav__label">Previous</span>
+        <span class="cs-project-nav__title">Admisiones by Eccole</span>
+      </div>
+    </a>
+    <div class="cs-project-nav__center">
+      <a href="index.html#work" class="cs-project-nav__all">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        All Projects
+      </a>
+    </div>
+    <a href="chicks.html" class="cs-project-nav__link cs-project-nav__link--next">
+      <div>
+        <span class="cs-project-nav__label">Next Project</span>
+        <span class="cs-project-nav__title">Chicks — Mobile App</span>
+      </div>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M6 12l4-4-4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</nav>
+
+<!-- FOOTER -->
+<footer class="cs-footer">
+  <div class="cs-footer__inner">
+    <a href="index.html" class="cs-footer__logo">
+      <img src="Logo-Danjez.png" alt="Danny Echeverría" width="100" height="24">
+    </a>
+    <p class="cs-footer__copy">© 2026 Danny Echeverría</p>
+    <a href="index.html#work" class="cs-footer__back">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Back to portfolio
+    </a>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('anim--visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

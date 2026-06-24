@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Galgo — Fintech case study by Danny Echeverría. Designing a digital credit product for informal workers in LATAM.">
+<title>Galgo — Danny Echeverría</title>
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="cs-nav" aria-label="Case study navigation">
+  <div class="cs-nav__inner">
+    <a href="index.html#work" class="cs-nav__back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Back to Work
+    </a>
+    <a href="index.html" class="cs-nav__logo">
+      <img src="Logo-Danjez.png" alt="Danny Echeverría" width="120" height="28">
+    </a>
+    <div class="cs-nav__badge">
+      <span class="cs-nav__badge-dot"></span>
+      Open to Work
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="cs-header">
+  <div class="cs-header__inner">
+    <div class="cs-header__tags anim">
+      <span class="cs-tag cs-tag--accent">Fintech</span>
+      <span class="cs-tag">UX Design</span>
+      <span class="cs-tag">UI Design</span>
+      <span class="cs-tag">Mobile First</span>
+      <span class="cs-tag">User Research</span>
+    </div>
+    <h1 class="cs-header__title anim">Galgo — Credit Access for the Informal Economy</h1>
+    <p class="cs-header__subtitle anim">Designing a mobile-first credit product for workers in LATAM who have been systematically excluded from traditional banking — people with real financial needs but no credit history.</p>
+    <div class="cs-meta anim">
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Role</p>
+        <p class="cs-meta__value">Lead Product Designer</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Industry</p>
+        <p class="cs-meta__value">Fintech / LATAM</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Year</p>
+        <p class="cs-meta__value">2024</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Deliverables</p>
+        <p class="cs-meta__value">Research · UX · UI · Prototype</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- COVER -->
+<div class="cs-cover anim">
+  <div class="cs-cover__image">
+    <div class="cs-cover__placeholder">Cover — Galgo App</div>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">Overview</p>
+  <h2 class="cs-section__title">A credit product that meets people where they are</h2>
+  <p class="cs-section__body">Galgo is a fintech targeting informal workers in LATAM — people who earn money daily but have no payslips, no bank account, and no credit score. Traditional banks call them "non-banked." We called them our users.</p>
+  <p class="cs-section__body">My role was to design the full mobile experience: from the onboarding and credit application flow, through the loan management dashboard, to the repayment process. Every decision had to work with low digital literacy, variable connectivity, and high trust risk (first-time credit is a high-stakes moment).</p>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Core Problem</p>
+    <p class="cs-callout__text">"How do we give someone a first credit product when we have no data on them — and they've never used a financial app before?"</p>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">01 — Discovery & Research</p>
+  <h2 class="cs-section__title">Understanding the informal worker's financial life</h2>
+  <div class="cs-section__cols cs-section__cols--60-40">
+    <div class="cs-section__col">
+      <p class="cs-section__body">We conducted 12 contextual interviews with informal workers (market vendors, taxi drivers, domestic workers) in Bogotá and Medellín. The goal was to understand how they currently manage debt, savings, and financial risk — not to validate our assumptions, but to challenge them.</p>
+      <p class="cs-section__body">Key finding: informal credit networks (prestamistas, natilleras) are built entirely on social trust and verbal contracts. Digital products that feel cold, bureaucratic, or opaque are immediately distrusted.</p>
+    </div>
+    <div class="cs-section__col">
+      <div class="cs-image cs-image--flush">
+        <div class="cs-image__placeholder cs-image__placeholder--tall">Research synthesis</div>
+      </div>
+    </div>
+  </div>
+  <div class="cs-grid cs-grid--3">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">User interview notes</div>
+      <p class="cs-image__caption">Field interviews — Bogotá</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Affinity mapping</div>
+      <p class="cs-image__caption">Synthesis session</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">User persona</div>
+      <p class="cs-image__caption">Primary persona — "Rosa"</p>
+    </div>
+  </div>
+</section>
+
+<!-- BENCHMARKING -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">02 — Benchmarking</p>
+  <h2 class="cs-section__title">How informal credit works today</h2>
+  <p class="cs-section__body">Before designing anything, we mapped the existing mental models: the informal lender (prestamista), the rotating savings group (natillera), and the neighborhood credit store. Each had a distinct interaction pattern we needed to reference — not copy.</p>
+  <div class="cs-grid cs-grid--2">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Competitor analysis — Nequi, Nu, Addi</div>
+      <p class="cs-image__caption">Digital fintech landscape</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Informal credit mental model map</div>
+      <p class="cs-image__caption">Physical-to-digital translation</p>
+    </div>
+  </div>
+</section>
+
+<!-- UX DESIGN -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">03 — UX Design</p>
+  <h2 class="cs-section__title">Designing for trust, not features</h2>
+  <p class="cs-section__body">The credit application flow had to do two things simultaneously: collect enough data to make a credit decision, and make the user feel safe enough to provide it. Every screen had to earn trust before asking for the next piece of information.</p>
+  <p class="cs-section__body">I designed the flow as a progressive disclosure sequence — starting with the least sensitive data (phone number) and building toward more sensitive inputs (income, purpose of loan) only after establishing clarity about how data is used.</p>
+  <div class="cs-image">
+    <div class="cs-image__placeholder">User flow — credit application, 12 screens</div>
+    <p class="cs-image__caption">Complete application flow with decision branches</p>
+  </div>
+  <div class="cs-grid cs-grid--2">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder cs-image__placeholder--tall">Wireframes — onboarding</div>
+      <p class="cs-image__caption">Lo-fi wireframes, tested in week 2</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder cs-image__placeholder--tall">Wireframes — loan dashboard</div>
+      <p class="cs-image__caption">Active loan management states</p>
+    </div>
+  </div>
+</section>
+
+<!-- UI DESIGN -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">04 — UI Design</p>
+  <h2 class="cs-section__title">A visual language built on warmth and clarity</h2>
+  <p class="cs-section__body">The UI needed to feel warm, not clinical — approachable enough for first-time app users, but professional enough to convey financial credibility. We used high-contrast typography, generous tap targets (48px minimum), and clear feedback states at every step.</p>
+  <div class="cs-image">
+    <div class="cs-image__placeholder">UI screens — final design system applied</div>
+    <p class="cs-image__caption">High-fidelity screens, mobile-first (375px)</p>
+  </div>
+  <div class="cs-grid cs-grid--4">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder cs-image__placeholder--portrait">Onboarding</div>
+      <p class="cs-image__caption">Screen 1 — Welcome</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder cs-image__placeholder--portrait">Credit form</div>
+      <p class="cs-image__caption">Screen 4 — Amount</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder cs-image__placeholder--portrait">Approval</div>
+      <p class="cs-image__caption">Screen 9 — Approved</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder cs-image__placeholder--portrait">Dashboard</div>
+      <p class="cs-image__caption">Active loan view</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">05 — Results</p>
+  <h2 class="cs-section__title">Outcomes</h2>
+  <div class="cs-metrics">
+    <div class="cs-metric">
+      <p class="cs-metric__number">73%</p>
+      <p class="cs-metric__label">Application completion rate (up from 41%)</p>
+    </div>
+    <div class="cs-metric">
+      <p class="cs-metric__number">4.6</p>
+      <p class="cs-metric__label">Average usability score (SUS, n=28)</p>
+    </div>
+    <div class="cs-metric">
+      <p class="cs-metric__number">12s</p>
+      <p class="cs-metric__label">Average time to understand loan terms</p>
+    </div>
+  </div>
+  <div class="cs-image">
+    <div class="cs-image__placeholder">Final product — key screens overview</div>
+    <p class="cs-image__caption">Delivered to engineering — complete component library + annotations</p>
+  </div>
+</section>
+
+<!-- PROJECT NAV -->
+<nav class="cs-project-nav" aria-label="Project navigation">
+  <div class="cs-project-nav__inner">
+    <div></div>
+    <div class="cs-project-nav__center">
+      <a href="index.html#work" class="cs-project-nav__all">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        All Projects
+      </a>
+    </div>
+    <a href="atmsec.html" class="cs-project-nav__link cs-project-nav__link--next">
+      <div>
+        <span class="cs-project-nav__label">Next Project</span>
+        <span class="cs-project-nav__title">ATM Sec — Monitoring at Scale</span>
+      </div>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M6 12l4-4-4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</nav>
+
+<!-- FOOTER -->
+<footer class="cs-footer">
+  <div class="cs-footer__inner">
+    <a href="index.html" class="cs-footer__logo">
+      <img src="Logo-Danjez.png" alt="Danny Echeverría" width="100" height="24">
+    </a>
+    <p class="cs-footer__copy">© 2026 Danny Echeverría</p>
+    <a href="index.html#work" class="cs-footer__back">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Back to portfolio
+    </a>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('anim--visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

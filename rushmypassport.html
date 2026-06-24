@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rush My Passport — Design System case study by Danny Echeverría.">
+<title>Rush My Passport — Danny Echeverría</title>
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="cs-nav" aria-label="Case study navigation">
+  <div class="cs-nav__inner">
+    <a href="index.html#work" class="cs-nav__back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Back to Work
+    </a>
+    <a href="index.html" class="cs-nav__logo">
+      <img src="Logo-Danjez.png" alt="Danny Echeverría" width="120" height="28">
+    </a>
+    <div class="cs-nav__badge">
+      <span class="cs-nav__badge-dot"></span>
+      Open to Work
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="cs-header">
+  <div class="cs-header__inner">
+    <div class="cs-header__tags anim">
+      <span class="cs-tag cs-tag--accent">Design System</span>
+      <span class="cs-tag">Tokens</span>
+      <span class="cs-tag">Component Library</span>
+      <span class="cs-tag">Governance</span>
+    </div>
+    <h1 class="cs-header__title anim">Rush My Passport — Scalable Design System</h1>
+    <p class="cs-header__subtitle anim">Built a complete design system from primitive tokens to documented components — giving a fast-moving product team the foundation to ship consistently at speed.</p>
+    <div class="cs-meta anim">
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Role</p>
+        <p class="cs-meta__value">Design System Lead</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Industry</p>
+        <p class="cs-meta__value">GovTech / Travel</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Year</p>
+        <p class="cs-meta__value">2023</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Deliverables</p>
+        <p class="cs-meta__value">Tokens · Components · Docs · Governance</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- COVER -->
+<div class="cs-cover anim">
+  <div class="cs-cover__image">
+    <div class="cs-cover__placeholder">Cover — Design System Overview</div>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">Overview</p>
+  <h2 class="cs-section__title">From inconsistency to a single source of truth</h2>
+  <p class="cs-section__body">Rush My Passport is a US-based service that expedites passport and travel document applications. When I joined, the product team had grown rapidly — three designers, four engineers — with no shared component library, no naming conventions, and no process for design changes to reach production consistently.</p>
+  <p class="cs-section__body">I was brought in to fix that: to design and document a system that would let the team move faster without breaking consistency, and would scale as the team continued to grow.</p>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Scope</p>
+    <p class="cs-callout__text">Full token architecture (primitive → semantic → component), 48 documented components, contribution guidelines, and a governance process for system evolution.</p>
+  </div>
+</section>
+
+<!-- AUDIT -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">01 — Audit</p>
+  <h2 class="cs-section__title">Mapping the inconsistency</h2>
+  <p class="cs-section__body">The first step was an interface audit: I cataloged every unique color value, type style, spacing value, and component variant in production. The result was sobering — 47 unique color values where there should have been 12, and 23 different button styles.</p>
+  <div class="cs-grid cs-grid--2">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Interface audit — color sprawl (47 values)</div>
+      <p class="cs-image__caption">Color audit snapshot from production</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Component inventory — 23 button variants</div>
+      <p class="cs-image__caption">Component sprawl across 3 product areas</p>
+    </div>
+  </div>
+</section>
+
+<!-- TOKEN ARCHITECTURE -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">02 — Token Architecture</p>
+  <h2 class="cs-section__title">Primitive → Semantic → Component</h2>
+  <p class="cs-section__body">I designed a three-tier token system. Primitive tokens are the raw values (colors as hex, spacing as rem). Semantic tokens assign meaning (color/background/primary, space/component/padding-sm). Component tokens bind semantics to specific elements (button/background/default).</p>
+  <p class="cs-section__body">This architecture means a brand rebrand touches only the primitive tier. A UX pattern change touches only the semantic tier. Component internals change only at the component tier — nothing cascades unexpectedly.</p>
+  <div class="cs-image">
+    <div class="cs-image__placeholder">Token hierarchy diagram — 3 tiers</div>
+    <p class="cs-image__caption">Primitive → Semantic → Component token architecture</p>
+  </div>
+  <div class="cs-grid cs-grid--3">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Color token swatch sheet</div>
+      <p class="cs-image__caption">Primitive color tokens (12 values)</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Semantic token mapping</div>
+      <p class="cs-image__caption">Semantic layer — 28 named roles</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Component token documentation</div>
+      <p class="cs-image__caption">Component tier — button example</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPONENTS -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">03 — Component Library</p>
+  <h2 class="cs-section__title">48 components. Every state documented.</h2>
+  <p class="cs-section__body">I built the component library in Figma with auto-layout, component properties, and variant coverage for every interactive state: default, hover, focused, active, disabled, loading, and error. Engineers received exact token names alongside every spec.</p>
+  <div class="cs-image">
+    <div class="cs-image__placeholder">Component library — full overview</div>
+    <p class="cs-image__caption">Figma library — 48 components, 312 variants</p>
+  </div>
+  <div class="cs-grid cs-grid--2">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Form components — all states</div>
+      <p class="cs-image__caption">Input, Select, Checkbox, Radio — 8 states each</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Navigation components</div>
+      <p class="cs-image__caption">Nav, Sidebar, Breadcrumb, Tabs</p>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTATION -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">04 — Documentation & Governance</p>
+  <h2 class="cs-section__title">A system only works if people actually use it</h2>
+  <p class="cs-section__body">I wrote usage guidelines for every component: when to use it, when not to, which props are required vs. optional, and accessibility requirements. For governance, I created a contribution process — a clear path for proposing new components, with criteria for "add to system" vs. "one-off".</p>
+  <div class="cs-grid cs-grid--2">
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Component documentation page — Button</div>
+      <p class="cs-image__caption">Notion-based docs — usage, props, a11y</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <div class="cs-image__placeholder">Contribution process flowchart</div>
+      <p class="cs-image__caption">How new components enter the system</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">05 — Results</p>
+  <h2 class="cs-section__title">Measurable impact on team velocity</h2>
+  <div class="cs-metrics">
+    <div class="cs-metric">
+      <p class="cs-metric__number">48</p>
+      <p class="cs-metric__label">Documented components shipped</p>
+    </div>
+    <div class="cs-metric">
+      <p class="cs-metric__number">3×</p>
+      <p class="cs-metric__label">Faster design-to-dev handoff (team estimate)</p>
+    </div>
+    <div class="cs-metric">
+      <p class="cs-metric__number">12→3</p>
+      <p class="cs-metric__label">Unique color values reduced (47 → 12 primitives)</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT NAV -->
+<nav class="cs-project-nav" aria-label="Project navigation">
+  <div class="cs-project-nav__inner">
+    <a href="atmsec.html" class="cs-project-nav__link">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <span class="cs-project-nav__label">Previous</span>
+        <span class="cs-project-nav__title">ATM Sec — Monitoring at Scale</span>
+      </div>
+    </a>
+    <div class="cs-project-nav__center">
+      <a href="index.html#work" class="cs-project-nav__all">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        All Projects
+      </a>
+    </div>
+    <a href="nexuscore.html" class="cs-project-nav__link cs-project-nav__link--next">
+      <div>
+        <span class="cs-project-nav__label">Next Project</span>
+        <span class="cs-project-nav__title">Nexus Core Académico</span>
+      </div>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M6 12l4-4-4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</nav>
+
+<!-- FOOTER -->
+<footer class="cs-footer">
+  <div class="cs-footer__inner">
+    <a href="index.html" class="cs-footer__logo">
+      <img src="Logo-Danjez.png" alt="Danny Echeverría" width="100" height="24">
+    </a>
+    <p class="cs-footer__copy">© 2026 Danny Echeverría</p>
+    <a href="index.html#work" class="cs-footer__back">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Back to portfolio
+    </a>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('anim--visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
