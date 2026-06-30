@@ -36,13 +36,14 @@
       <span class="cs-tag">UI Design</span>
       <span class="cs-tag">Dashboard</span>
       <span class="cs-tag">Data Visualization</span>
+      <span class="cs-tag">Design System</span>
     </div>
-    <h1 class="cs-header__title anim">ATM Sec — Monitoring at Scale</h1>
-    <p class="cs-header__subtitle anim">A B2B operations platform for managing and monitoring ATM networks across multiple clients — designed for operators who need to act fast on incomplete information.</p>
+    <h1 class="cs-header__title anim">ATM Sec — Designing Clarity for Critical Operations</h1>
+    <p class="cs-header__subtitle anim">A monitoring and management platform for ATM networks where every second matters. My challenge: transform large volumes of technical data into an experience that enables operators to detect incidents, prioritize actions, and make decisions quickly.</p>
     <div class="cs-meta anim">
       <div class="cs-meta__item">
         <p class="cs-meta__label">Role</p>
-        <p class="cs-meta__value">UI Designer</p>
+        <p class="cs-meta__value">Product Designer</p>
       </div>
       <div class="cs-meta__item">
         <p class="cs-meta__label">Industry</p>
@@ -54,7 +55,7 @@
       </div>
       <div class="cs-meta__item">
         <p class="cs-meta__label">Deliverables</p>
-        <p class="cs-meta__value">Dashboard UI · Data Viz · Handoff</p>
+        <p class="cs-meta__value">Research · IA · Wireframes · UI · Design System</p>
       </div>
     </div>
   </div>
@@ -70,84 +71,92 @@
 <!-- OVERVIEW -->
 <section class="cs-section anim">
   <p class="cs-section__eyebrow">Overview</p>
-  <h2 class="cs-section__title">When hundreds of ATMs break, someone needs to see everything at once</h2>
-  <p class="cs-section__body">ATM Sec is a monitoring platform used by B2B operators to manage ATM networks on behalf of banks and financial institutions. Operators can have 200–800 machines in their portfolio, spread across multiple client accounts, cities, and failure types.</p>
-  <p class="cs-section__body">The existing interface was built by engineers for engineers — tables of raw data, no visual hierarchy, no prioritization. My role was to redesign the core dashboard and alert management system into something operators could actually act on under pressure.</p>
-  <div class="cs-callout">
-    <p class="cs-callout__label">Core Problem</p>
-    <p class="cs-callout__text">"Operators were missing critical alerts because everything looked equally urgent. The interface created noise, not signal."</p>
-  </div>
+  <h2 class="cs-section__title">Designing Clarity for Critical Operations</h2>
+  <p class="cs-section__body">ATMSec is a monitoring and management platform for ATM networks, where every second matters. My challenge was to transform large volumes of technical data into an experience that enables operators to detect incidents, prioritize actions, and make decisions quickly.</p>
+  <p class="cs-section__body">Rather than jumping straight into UI design, I started by understanding the operational context, business workflows, and users' real needs. The goal was to reduce cognitive load and turn complex data into actionable insights.</p>
 </section>
 
-<!-- BENCHMARKING -->
+<!-- UNDERSTANDING THE PROBLEM -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">01 — Benchmarking</p>
-  <h2 class="cs-section__title">Analyzing the existing system and the competition</h2>
-  <p class="cs-section__body">I started by auditing the existing interface and benchmarking 6 operations dashboards in adjacent industries: network monitoring (Datadog, PagerDuty), field service management, and ATM-specific tools from NCR and Diebold.</p>
-  <div class="cs-grid cs-grid--2">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Existing interface audit — problems mapped</div>
-      <p class="cs-image__caption">Current state: 14 identified UX problems</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Benchmarking — Datadog, PagerDuty, NCR</div>
-      <p class="cs-image__caption">Pattern library from competitive analysis</p>
-    </div>
+  <p class="cs-section__eyebrow">01 — Understanding the Problem</p>
+  <h2 class="cs-section__title">Before opening Figma, I understood the operation</h2>
+  <p class="cs-section__body">I analyzed how operators interacted with the platform, which information they accessed most frequently, and where the biggest friction points existed.</p>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Key questions that guided discovery</p>
+    <p class="cs-callout__text">What does an operator need to see first? · How can critical incidents be identified within seconds? · Which information truly supports decision-making?</p>
   </div>
-  <p class="cs-section__body">Key patterns I extracted: severity-based color coding (not just red/green), geographic clustering for field dispatch, and progressive disclosure for alert details — reveal context on demand, not all at once.</p>
+  <p class="cs-section__body">This discovery phase helped establish the product priorities before designing any interface.</p>
 </section>
 
 <!-- INFORMATION ARCHITECTURE -->
 <section class="cs-section anim">
   <p class="cs-section__eyebrow">02 — Information Architecture</p>
-  <h2 class="cs-section__title">What operators actually need to see first</h2>
-  <p class="cs-section__body">Through 5 contextual observation sessions with ATM operators, I identified three decision types that drive the operator's day: triage (which ATM needs attention right now), dispatch (who goes where), and reporting (what happened this week).</p>
-  <p class="cs-section__body">I restructured the IA around these three modes rather than the data model the engineers had built around. The navigation became mode-based, not table-based.</p>
+  <h2 class="cs-section__title">Organizing information for clarity and scale</h2>
+  <p class="cs-section__body">Based on the research findings, I organized the platform's information into a clear and scalable architecture. The sidebar navigation was designed to minimize the time users spend searching for features, while the dashboard brings together only the metrics that require immediate attention.</p>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Each section serves a specific operational purpose</p>
+    <p class="cs-callout__text">Overall system health · ATM availability · Critical processes · Geographic distribution · Active incident management</p>
+  </div>
   <div class="cs-image">
-    <div class="cs-image__placeholder">Information architecture — before / after comparison</div>
-    <p class="cs-image__caption">Restructured navigation: 3 modes replacing 11 flat tabs</p>
+    <img src="atm-img/Frame%208.png" alt="ATM Sec — Information Architecture" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Platform IA — navigation organized by operational purpose</p>
   </div>
 </section>
 
-<!-- UI DESIGN -->
+<!-- WIREFRAMING -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">03 — UI Design</p>
-  <h2 class="cs-section__title">Dashboard, alert management, and map view</h2>
-  <p class="cs-section__body">I designed three core views. The main dashboard gives operators a status overview at a glance — machine count by severity, geographic distribution, and the top 5 alerts requiring action. The alert view allows filtering, sorting, and bulk actions. The map view shows machine locations with color-coded status overlays.</p>
+  <p class="cs-section__eyebrow">03 — Wireframing</p>
+  <h2 class="cs-section__title">Multiple layout variations before the final solution</h2>
+  <p class="cs-section__body">I explored multiple layout variations before arriving at the final solution. The objective was to create a visual hierarchy that allowed operators to understand the overall status of the operation in less than five seconds.</p>
+  <p class="cs-section__body">Every component was designed to minimize interactions and support continuous monitoring.</p>
+</section>
+
+<!-- VISUAL DESIGN -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">04 — Visual Design</p>
+  <h2 class="cs-section__title">A clean, modern interface that prioritizes clarity over decoration</h2>
+  <p class="cs-section__body">The interface follows a clean, modern aesthetic inspired by enterprise monitoring platforms. Every visual decision was made to support operators during long shifts.</p>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Visual decisions</p>
+    <p class="cs-callout__text">Highlight critical information through meaningful color usage · Reduce visual noise · Maintain consistency across charts, tables, and maps · Improve readability during long operational shifts</p>
+  </div>
   <div class="cs-image">
-    <div class="cs-image__placeholder">Main dashboard — final UI</div>
-    <p class="cs-image__caption">Overview mode — 800px breakpoint</p>
+    <img src="atm-img/%28D%29%20-%20Dashboard.png" alt="ATM Sec — Main dashboard" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Overview dashboard — full fidelity</p>
   </div>
   <div class="cs-grid cs-grid--2">
     <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Alert management view</div>
-      <p class="cs-image__caption">Triage mode — sortable, filterable</p>
+      <img src="atm-img/%28D%29%20-%20Ticket%20Manager.png" alt="ATM Sec — Ticket Manager" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;">
+      <p class="cs-image__caption">Active incident list — sortable, filterable</p>
     </div>
     <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Geographic map view</div>
-      <p class="cs-image__caption">Dispatch mode — clustered markers</p>
-    </div>
-  </div>
-  <div class="cs-grid cs-grid--3">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Machine detail panel</div>
-      <p class="cs-image__caption">Individual ATM history</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Alert severity system</div>
-      <p class="cs-image__caption">4-level color + icon system</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Report generation flow</div>
-      <p class="cs-image__caption">Weekly report export</p>
+      <img src="atm-img/%28D%29%20-%20Procesos%20Seguro-%20validando.png" alt="ATM Sec — Secure Processes" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;">
+      <p class="cs-image__caption">ATM distribution — color-coded by status</p>
     </div>
   </div>
 </section>
 
-<!-- RESULTS -->
+<!-- DESIGN SYSTEM -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">04 — Results</p>
-  <h2 class="cs-section__title">Faster triage, fewer missed alerts</h2>
+  <p class="cs-section__eyebrow">05 — Design System</p>
+  <h2 class="cs-section__title">A reusable system for scalable growth</h2>
+  <p class="cs-section__body">To ensure scalability, I built a reusable design system based on modular components. This approach maintained consistency and enables future features to be added efficiently while preserving a cohesive user experience.</p>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Components covered</p>
+    <p class="cs-callout__text">Cards · Tables · Charts · Forms · States · Buttons · Navigation · Spacing · Typography</p>
+  </div>
+  <div class="cs-image">
+    <img src="atm-img/Ticket%20Manager%20db%20v3.png" alt="ATM Sec — Design System components" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Full component library — all states documented</p>
+  </div>
+</section>
+
+<!-- FINAL OUTCOME -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">06 — Final Outcome</p>
+  <h2 class="cs-section__title">A dashboard that supports faster, more confident decisions</h2>
+  <p class="cs-section__body">The final product is a dashboard that enables operators to quickly identify critical incidents, monitor hundreds of ATMs, and manage operations from a single, unified interface.</p>
+  <p class="cs-section__body">Rather than simply designing an interface, my goal was to create a tool that supports faster and more confident decision-making in an environment where speed and accuracy are essential.</p>
   <div class="cs-metrics">
     <div class="cs-metric">
       <p class="cs-metric__number">60%</p>
@@ -161,6 +170,16 @@
       <p class="cs-metric__number">4.8</p>
       <p class="cs-metric__label">Operator satisfaction score (out of 5)</p>
     </div>
+  </div>
+</section>
+
+<!-- REFLECTION -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">Reflection</p>
+  <h2 class="cs-section__title">The right information at the right time</h2>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Design principle</p>
+    <p class="cs-callout__text">Great design isn't about displaying more information — it's about presenting the right information at the right time. Every UX decision was driven by the goal of reducing user effort, improving operational efficiency, and building a scalable product capable of evolving alongside the business.</p>
   </div>
 </section>
 

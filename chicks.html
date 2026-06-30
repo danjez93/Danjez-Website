@@ -75,153 +75,165 @@
   <p class="cs-section__body">Every major decision in the UI traces back to a research finding or a usability test result. This case study documents that traceability.</p>
   <div class="cs-callout">
     <p class="cs-callout__label">Approach</p>
-    <p class="cs-callout__text">Research → Synthesis → Architecture → Wireframe → Test → Iterate → Final UI → Design System. Each stage informed the next.</p>
+    <p class="cs-callout__text">Research → Benchmark → Architecture → Wireframe → Test → Iterate → Final UI → Design System. Each stage informed the next.</p>
   </div>
 </section>
 
-<!-- RESEARCH -->
+<!-- FEATURES -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">01 — User Research</p>
-  <h2 class="cs-section__title">Understanding the user before defining the product</h2>
-  <p class="cs-section__body">I conducted 10 semi-structured interviews with target users, followed by a competitive analysis of 6 apps in the same space. The research goal was to understand what the product needed to do, and what existing options were failing to do well.</p>
+  <p class="cs-section__eyebrow">01 — Features</p>
+  <h2 class="cs-section__title">What the app needs to let users do</h2>
+  <p class="cs-section__body">Before defining the architecture, I mapped out the product's core capabilities from the user's perspective. These 12 features shaped every structural and design decision that followed.</p>
   <div class="cs-grid cs-grid--2">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Interview script + synthesis notes</div>
-      <p class="cs-image__caption">10 user interviews — key themes extracted</p>
+    <div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">1</p>
+        <p class="cs-callout__text">See featured offers on the home page.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">2</p>
+        <p class="cs-callout__text">Search for destinations of interest and save them in my planning journal.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">3</p>
+        <p class="cs-callout__text">Search for destinations of interest and save them in my planning journal.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">4</p>
+        <p class="cs-callout__text">Find fascinating experiences to do in the city I'm visiting, based on my interests such as food, art, culture, music, animals, etc.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">5</p>
+        <p class="cs-callout__text">Secure car rentals and ground transportation at the destination I will visit to feel safer.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">6</p>
+        <p class="cs-callout__text">Secure car rentals and ground transportation at the destination I will visit to feel safer.</p>
+      </div>
     </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Competitive analysis — 6 apps mapped</div>
-      <p class="cs-image__caption">Feature gap analysis</p>
-    </div>
-  </div>
-</section>
-
-<!-- PERSONAS & JOURNEY -->
-<section class="cs-section anim">
-  <p class="cs-section__eyebrow">02 — Personas & User Journey</p>
-  <h2 class="cs-section__title">Who we're designing for and what they need to do</h2>
-  <div class="cs-section__cols">
-    <div class="cs-section__col">
-      <p class="cs-section__body">From the research, I developed two primary personas representing the two distinct use modes. The user journey mapped the end-to-end experience across both personas, identifying the moments with the highest friction and the highest emotional stakes.</p>
-    </div>
-    <div class="cs-section__col">
-      <div class="cs-image cs-image--flush">
-        <div class="cs-image__placeholder">Persona cards</div>
+    <div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">7</p>
+        <p class="cs-callout__text">Find flights with attractive discounts and build travel packages that include experiences and are connected to ground transportation.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">8</p>
+        <p class="cs-callout__text">View and follow trips taken by my friends to see the options they chose and save them as favorites.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">9</p>
+        <p class="cs-callout__text">Share my trips, restaurants, transportation, and experiences chosen for my trip on social media.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">10</p>
+        <p class="cs-callout__text">Discover new destinations curated by travel experts to follow their recommendations when planning my trip.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">11</p>
+        <p class="cs-callout__text">Contact housing hosts to learn more about their profile and the reviews of their properties.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">12</p>
+        <p class="cs-callout__text">Find appealing restaurants by type of cuisine and read reviews written by diners.</p>
       </div>
     </div>
   </div>
+</section>
+
+<!-- INFORMATION ARCHITECTURE -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">02 — Information Architecture</p>
+  <h2 class="cs-section__title">Mapping the full structure of the product</h2>
+  <p class="cs-section__body">With the 12 features defined, I built the complete information architecture — tracing every screen, decision point, and flow from onboarding through the core user journeys. This map was the foundation for all wireframing decisions that followed.</p>
   <div class="cs-image">
-    <div class="cs-image__placeholder">User journey map — full experience across touchpoints</div>
-    <p class="cs-image__caption">Journey map — emotional curve + pain points highlighted</p>
+    <img src="chicks/arquitectura-de-informacion-chicks.png" alt="Chicks — Information Architecture" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Full IA — onboarding, home, navigation, and core flows</p>
   </div>
 </section>
 
-<!-- WIREFRAMES -->
+<!-- BENCHMARK -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">03 — Wireframes</p>
+  <p class="cs-section__eyebrow">03 — Benchmark</p>
+  <h2 class="cs-section__title">Identifying key attributes from leading travel apps</h2>
+  <p class="cs-section__body">I analyzed three reference products to identify proven patterns, capability gaps, and interaction decisions worth adapting — or deliberately avoiding. These findings directly informed the first wireframes.</p>
+
+  <div class="cs-section__cols cs-section__cols--60-40">
+    <div class="cs-section__col">
+      <p class="cs-section__eyebrow" style="margin-bottom: 12px;">Airbnb</p>
+      <div class="cs-image" style="background: none; box-shadow: none; border-radius: 0; overflow: visible;">
+        <img src="chicks/benchmark-airbnb.png" alt="Airbnb benchmark" style="width: 100%; height: auto; display: block;">
+      </div>
+    </div>
+    <div class="cs-section__col">
+      <div class="cs-callout">
+        <p class="cs-callout__label">Good points</p>
+        <p class="cs-callout__text">Geolocalization · Top menu for additional functions · Cards on searching localization</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">Pain points</p>
+        <p class="cs-callout__text">The search doesn't tell me where I am right now.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-section__cols cs-section__cols--60-40">
+    <div class="cs-section__col">
+      <p class="cs-section__eyebrow" style="margin-bottom: 12px;">Citylook</p>
+      <div class="cs-image" style="background: none; box-shadow: none; border-radius: 0; overflow: visible;">
+        <img src="chicks/benchmark-citylook.png" alt="Citylook benchmark" style="width: 100%; height: auto; display: block;">
+      </div>
+    </div>
+    <div class="cs-section__col">
+      <div class="cs-callout">
+        <p class="cs-callout__label">Good points</p>
+        <p class="cs-callout__text">Geolocalization · Top menu for additional functions · Cards on searching localization · Map available · Reservation · In the product details you have the option to choose the booking time, making it faster.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">Pain points</p>
+        <p class="cs-callout__text">It can't be reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-section__cols cs-section__cols--60-40">
+    <div class="cs-section__col">
+      <p class="cs-section__eyebrow" style="margin-bottom: 12px;">Apparta</p>
+      <div class="cs-image" style="background: none; box-shadow: none; border-radius: 0; overflow: visible;">
+        <img src="chicks/benchmark-apparta.png" alt="Apparta benchmark" style="width: 100%; height: auto; display: block;">
+      </div>
+    </div>
+    <div class="cs-section__col">
+      <div class="cs-callout">
+        <p class="cs-callout__label">Good points</p>
+        <p class="cs-callout__text">Geolocalization · Map available · Reservation system · Booking time selection directly from the product detail page.</p>
+      </div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">Pain points</p>
+        <p class="cs-callout__text">No social sharing features · Limited experience discovery beyond accommodation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHITE FRAMES -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">04 — White Frames</p>
   <h2 class="cs-section__title">Structure before style</h2>
-  <p class="cs-section__body">I started with low-fidelity wireframes for the core flows — onboarding, main feature, and key interactions. The wireframe stage was about testing navigation architecture and content hierarchy, not visual design. Changes at this stage cost nothing.</p>
-  <div class="cs-grid cs-grid--4">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Welcome</div>
-      <p class="cs-image__caption">Onboarding 1</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Setup</div>
-      <p class="cs-image__caption">Onboarding 2</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Home</div>
-      <p class="cs-image__caption">Main view</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Detail</div>
-      <p class="cs-image__caption">Detail view</p>
-    </div>
-  </div>
-</section>
-
-<!-- TESTING -->
-<section class="cs-section anim">
-  <p class="cs-section__eyebrow">04 — Usability Testing</p>
-  <h2 class="cs-section__title">Testing the prototype with real users</h2>
-  <p class="cs-section__body">I ran two rounds of moderated usability tests using a clickable Figma prototype. Round 1 (6 participants) tested the overall navigation architecture. Round 2 (4 participants) validated the revised design after incorporating Round 1 findings.</p>
-  <p class="cs-section__body">The most significant change from testing: the original main navigation used a bottom tab bar with 5 items. Users consistently skipped the 4th and 5th tabs — they were consolidated into a single "More" entry, reducing the navigation to 4 tabs.</p>
-  <div class="cs-grid cs-grid--2">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Usability test notes — Round 1</div>
-      <p class="cs-image__caption">6 participants, moderated sessions</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Navigation redesign — 5 tabs → 4 tabs</div>
-      <p class="cs-image__caption">Key change driven by testing</p>
-    </div>
+  <p class="cs-section__body">Before applying any visual decisions, I mapped out the core flows in low-fidelity wireframes. The focus at this stage was navigation architecture, content hierarchy, and interaction patterns — not aesthetics. Changes here cost nothing.</p>
+  <div class="cs-image" style="background: none; box-shadow: none; border-radius: 0; overflow: visible;">
+    <img src="chicks/wireframes-chicks.png" alt="Chicks — Wireframes" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Low-fidelity wireframes — core reservation and navigation flows</p>
   </div>
 </section>
 
 <!-- FINAL UI -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">05 — Final UI</p>
+  <p class="cs-section__eyebrow">05 — Final Prototype</p>
   <h2 class="cs-section__title">The product, fully designed</h2>
-  <p class="cs-section__body">The final UI applied a visual system built around legibility, generous white space, and clear hierarchy. Every interactive element meets the 44px minimum touch target. Colors and contrast ratios meet WCAG AA for accessibility.</p>
-  <div class="cs-image">
-    <div class="cs-image__placeholder">Final screens — full UI overview</div>
+  <p class="cs-section__body">The final UI applied a visual system built around the product's identity — bold, warm, and easy to navigate. Every structural decision from the wireframe phase carried through into the final screens, validated by the flows tested in prototype sessions.</p>
+  <div class="cs-image" style="background: none; box-shadow: none; border-radius: 0; overflow: visible;">
+    <img src="chicks/ui-chicks.png" alt="Chicks — Final UI" style="width: 100%; height: auto; display: block;">
     <p class="cs-image__caption">High-fidelity final design — complete screen set</p>
-  </div>
-  <div class="cs-grid cs-grid--4">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Onboarding</div>
-      <p class="cs-image__caption">Welcome</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Home</div>
-      <p class="cs-image__caption">Main feed</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Detail</div>
-      <p class="cs-image__caption">Item view</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Profile</div>
-      <p class="cs-image__caption">User profile</p>
-    </div>
-  </div>
-</section>
-
-<!-- DESIGN SYSTEM -->
-<section class="cs-section anim">
-  <p class="cs-section__eyebrow">06 — Design System</p>
-  <h2 class="cs-section__title">Handoff-ready component library</h2>
-  <p class="cs-section__body">The project concluded with a documented mobile design system: color tokens, type scale, spacing system, and a component library covering all the elements used in the app. The system was annotated for engineering handoff with exact values and behavior notes.</p>
-  <div class="cs-grid cs-grid--2">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Mobile component library</div>
-      <p class="cs-image__caption">22 mobile components — all states</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Design tokens — color + type + spacing</div>
-      <p class="cs-image__caption">Token documentation for handoff</p>
-    </div>
-  </div>
-</section>
-
-<!-- RESULTS -->
-<section class="cs-section anim">
-  <p class="cs-section__eyebrow">07 — Summary</p>
-  <h2 class="cs-section__title">What this project demonstrates</h2>
-  <div class="cs-metrics">
-    <div class="cs-metric">
-      <p class="cs-metric__number">10</p>
-      <p class="cs-metric__label">User interviews conducted</p>
-    </div>
-    <div class="cs-metric">
-      <p class="cs-metric__number">2</p>
-      <p class="cs-metric__label">Rounds of moderated usability testing</p>
-    </div>
-    <div class="cs-metric">
-      <p class="cs-metric__number">22</p>
-      <p class="cs-metric__label">Documented components in the design system</p>
-    </div>
   </div>
 </section>
 

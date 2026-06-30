@@ -70,100 +70,110 @@
 <!-- OVERVIEW -->
 <section class="cs-section anim">
   <p class="cs-section__eyebrow">Overview</p>
-  <h2 class="cs-section__title">From inconsistency to a single source of truth</h2>
-  <p class="cs-section__body">Rush My Passport is a US-based service that expedites passport and travel document applications. When I joined, the product team had grown rapidly — three designers, four engineers — with no shared component library, no naming conventions, and no process for design changes to reach production consistently.</p>
-  <p class="cs-section__body">I was brought in to fix that: to design and document a system that would let the team move faster without breaking consistency, and would scale as the team continued to grow.</p>
+  <h2 class="cs-section__title">Building a Scalable Design System for RushMyPassport</h2>
+  <p class="cs-section__body">As a UI Designer, I contributed to the creation of a robust and scalable design system for RushMyPassport, with the goal of improving consistency, accessibility, and collaboration across the product ecosystem.</p>
+  <p class="cs-section__body">Rather than designing isolated interfaces, we focused on building a unified foundation that would enable teams to create new experiences faster while maintaining a consistent visual language.</p>
+  <div class="cs-image">
+    <img src="rush-my-passport/Frame%2039936.png" alt="RushMyPassport — Design System overview" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Design system — unified visual foundation</p>
+  </div>
+</section>
+
+<!-- MY CONTRIBUTION -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">01 — My Contribution</p>
+  <h2 class="cs-section__title">Defining and refining every core element</h2>
+  <p class="cs-section__body">I collaborated in defining and refining the core elements of the design system, ensuring every component aligned with usability standards, accessibility guidelines, and the product's visual identity.</p>
   <div class="cs-callout">
-    <p class="cs-callout__label">Scope</p>
-    <p class="cs-callout__text">Full token architecture (primitive → semantic → component), 48 documented components, contribution guidelines, and a governance process for system evolution.</p>
+    <p class="cs-callout__label">My work included</p>
+    <p class="cs-callout__text">Designing reusable UI components and scalable patterns · Establishing a consistent typography hierarchy for optimal readability · Defining spacing, sizing, and layout rules to create predictable interfaces · Implementing design tokens for colors, typography, spacing, borders, and elevation, enabling seamless collaboration between design and development · Applying accessibility best practices, including sufficient color contrast, clear focus states, semantic hierarchy, and inclusive interaction patterns · Maintaining consistency across desktop and responsive experiences</p>
   </div>
-</section>
-
-<!-- AUDIT -->
-<section class="cs-section anim">
-  <p class="cs-section__eyebrow">01 — Audit</p>
-  <h2 class="cs-section__title">Mapping the inconsistency</h2>
-  <p class="cs-section__body">The first step was an interface audit: I cataloged every unique color value, type style, spacing value, and component variant in production. The result was sobering — 47 unique color values where there should have been 12, and 23 different button styles.</p>
-  <div class="cs-grid cs-grid--2">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Interface audit — color sprawl (47 values)</div>
-      <p class="cs-image__caption">Color audit snapshot from production</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Component inventory — 23 button variants</div>
-      <p class="cs-image__caption">Component sprawl across 3 product areas</p>
-    </div>
-  </div>
-</section>
-
-<!-- TOKEN ARCHITECTURE -->
-<section class="cs-section anim">
-  <p class="cs-section__eyebrow">02 — Token Architecture</p>
-  <h2 class="cs-section__title">Primitive → Semantic → Component</h2>
-  <p class="cs-section__body">I designed a three-tier token system. Primitive tokens are the raw values (colors as hex, spacing as rem). Semantic tokens assign meaning (color/background/primary, space/component/padding-sm). Component tokens bind semantics to specific elements (button/background/default).</p>
-  <p class="cs-section__body">This architecture means a brand rebrand touches only the primitive tier. A UX pattern change touches only the semantic tier. Component internals change only at the component tier — nothing cascades unexpectedly.</p>
   <div class="cs-image">
-    <div class="cs-image__placeholder">Token hierarchy diagram — 3 tiers</div>
-    <p class="cs-image__caption">Primitive → Semantic → Component token architecture</p>
+    <img src="rush-my-passport/navigation.png" alt="RushMyPassport — Navigation component" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Navigation component — all states and breakpoints</p>
   </div>
-  <div class="cs-grid cs-grid--3">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Color token swatch sheet</div>
-      <p class="cs-image__caption">Primitive color tokens (12 values)</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Semantic token mapping</div>
-      <p class="cs-image__caption">Semantic layer — 28 named roles</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Component token documentation</div>
-      <p class="cs-image__caption">Component tier — button example</p>
-    </div>
-  </div>
-</section>
-
-<!-- COMPONENTS -->
-<section class="cs-section anim">
-  <p class="cs-section__eyebrow">03 — Component Library</p>
-  <h2 class="cs-section__title">48 components. Every state documented.</h2>
-  <p class="cs-section__body">I built the component library in Figma with auto-layout, component properties, and variant coverage for every interactive state: default, hover, focused, active, disabled, loading, and error. Engineers received exact token names alongside every spec.</p>
   <div class="cs-image">
-    <div class="cs-image__placeholder">Component library — full overview</div>
-    <p class="cs-image__caption">Figma library — 48 components, 312 variants</p>
+    <img src="rush-my-passport/accordion.png" alt="RushMyPassport — Accordion component" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Accordion — collapsed and expanded states</p>
+  </div>
+  <div class="cs-image">
+    <img src="rush-my-passport/Pictograms.png" alt="RushMyPassport — Pictograms" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Pictogram library — scalable icon system</p>
+  </div>
+  <div class="cs-image">
+    <img src="rush-my-passport/card-article.png" alt="RushMyPassport — Card article component" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Card article — reusable content pattern</p>
+  </div>
+  <div class="cs-image">
+    <img src="rush-my-passport/Frame%2039940.png" alt="RushMyPassport — Component detail" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Component tokens — color and spacing bindings</p>
+  </div>
+</section>
+
+<!-- DESIGN PRINCIPLES -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">02 — Design Principles</p>
+  <h2 class="cs-section__title">Every decision driven by a set of principles</h2>
+  <p class="cs-section__body">These principles ensured the system could evolve without sacrificing quality, and gave the team a shared framework for evaluating every component decision.</p>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Accessibility First</p>
+    <p class="cs-callout__text">Designing inclusive experiences that comply with modern accessibility standards.</p>
+  </div>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Consistency</p>
+    <p class="cs-callout__text">Creating a cohesive visual language across every product touchpoint.</p>
+  </div>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Scalability</p>
+    <p class="cs-callout__text">Building flexible components capable of supporting future product growth.</p>
+  </div>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Efficiency</p>
+    <p class="cs-callout__text">Reducing design and development time through reusable assets and standardized patterns.</p>
+  </div>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Collaboration</p>
+    <p class="cs-callout__text">Strengthening the workflow between designers and engineers through a shared design language.</p>
+  </div>
+</section>
+
+<!-- DESIGN SYSTEM IN ACTION -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">03 — Design System in Action</p>
+  <h2 class="cs-section__title">Components applied across the product</h2>
+  <p class="cs-section__body">The real test of any design system is whether it scales to production pages without custom workarounds. These are live product sections built entirely from system components.</p>
+  <div class="cs-image">
+    <img src="rush-my-passport/section-value-props.png" alt="RushMyPassport — Value propositions section" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Value props section — built from system components</p>
   </div>
   <div class="cs-grid cs-grid--2">
     <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Form components — all states</div>
-      <p class="cs-image__caption">Input, Select, Checkbox, Radio — 8 states each</p>
+      <img src="rush-my-passport/section-track.png" alt="RushMyPassport — Track section" style="width: 100%; height: auto; display: block;">
+      <p class="cs-image__caption">Order tracking section</p>
     </div>
     <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Navigation components</div>
-      <p class="cs-image__caption">Nav, Sidebar, Breadcrumb, Tabs</p>
+      <img src="rush-my-passport/Expediting%20Options.png" alt="RushMyPassport — Expediting Options" style="width: 100%; height: auto; display: block;">
+      <p class="cs-image__caption">Expediting options — layout and card patterns</p>
+    </div>
+  </div>
+  <div class="cs-grid cs-grid--2">
+    <div class="cs-image cs-image--flush">
+      <img src="rush-my-passport/estate-listing.png" alt="RushMyPassport — Estate listing" style="width: 100%; height: auto; display: block;">
+      <p class="cs-image__caption">Listing template — full design system coverage</p>
+    </div>
+    <div class="cs-image cs-image--flush">
+      <img src="rush-my-passport/Frame%2039941.png" alt="RushMyPassport — Additional component view" style="width: 100%; height: auto; display: block;">
+      <p class="cs-image__caption">Component composition in context</p>
     </div>
   </div>
 </section>
 
-<!-- DOCUMENTATION -->
+<!-- OUTCOME -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">04 — Documentation & Governance</p>
-  <h2 class="cs-section__title">A system only works if people actually use it</h2>
-  <p class="cs-section__body">I wrote usage guidelines for every component: when to use it, when not to, which props are required vs. optional, and accessibility requirements. For governance, I created a contribution process — a clear path for proposing new components, with criteria for "add to system" vs. "one-off".</p>
-  <div class="cs-grid cs-grid--2">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Component documentation page — Button</div>
-      <p class="cs-image__caption">Notion-based docs — usage, props, a11y</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Contribution process flowchart</div>
-      <p class="cs-image__caption">How new components enter the system</p>
-    </div>
-  </div>
-</section>
-
-<!-- RESULTS -->
-<section class="cs-section anim">
-  <p class="cs-section__eyebrow">05 — Results</p>
-  <h2 class="cs-section__title">Measurable impact on team velocity</h2>
+  <p class="cs-section__eyebrow">04 — Outcome</p>
+  <h2 class="cs-section__title">A shared foundation that empowers teams</h2>
+  <p class="cs-section__body">The result was a scalable design system that streamlined the design process, accelerated product development, and improved consistency across the platform.</p>
+  <p class="cs-section__body">More than a collection of components, the system became a shared foundation that empowered teams to build high-quality user experiences with greater speed, confidence, and consistency.</p>
   <div class="cs-metrics">
     <div class="cs-metric">
       <p class="cs-metric__number">48</p>
@@ -174,8 +184,8 @@
       <p class="cs-metric__label">Faster design-to-dev handoff (team estimate)</p>
     </div>
     <div class="cs-metric">
-      <p class="cs-metric__number">12→3</p>
-      <p class="cs-metric__label">Unique color values reduced (47 → 12 primitives)</p>
+      <p class="cs-metric__number">47→12</p>
+      <p class="cs-metric__label">Unique color values consolidated into primitives</p>
     </div>
   </div>
 </section>

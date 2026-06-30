@@ -63,143 +63,112 @@
 
 <!-- COVER -->
 <div class="cs-cover anim">
-  <div class="cs-cover__image">
-    <img src="galgo.png" alt="Galgo — Credit Platform">
+  <div class="cs-cover__image" style="aspect-ratio: unset;">
+    <img src="galgo-cover-detail-page.png" alt="Galgo — Credit Platform" style="width: 100%; height: auto; object-fit: unset;">
   </div>
 </div>
 
 <!-- OVERVIEW -->
 <section class="cs-section anim">
   <p class="cs-section__eyebrow">Overview</p>
-  <h2 class="cs-section__title">A credit product that meets people where they are</h2>
-  <p class="cs-section__body">Galgo is a fintech targeting informal workers in LATAM — people who earn money daily but have no payslips, no bank account, and no credit score. Traditional banks call them "non-banked." We called them our users.</p>
-  <p class="cs-section__body">My role was to design the full mobile experience: from the onboarding and credit application flow, through the loan management dashboard, to the repayment process. Every decision had to work with low digital literacy, variable connectivity, and high trust risk (first-time credit is a high-stakes moment).</p>
+  <h2 class="cs-section__title">The validation process was driving users away</h2>
+  <p class="cs-section__body">Galgo is a fintech platform that provides loans for informal workers who don't have traditional income certification. The product existed — but a critical problem was identified: users were abandoning the credit validation flow before completing it.</p>
+  <p class="cs-section__body">The flow had too many screens, too many unexplained fields, and confusing messages asking for high-denomination bills at every step. My role was to research why this was happening and redesign the flow to fix it.</p>
   <div class="cs-callout">
-    <p class="cs-callout__label">Core Problem</p>
-    <p class="cs-callout__text">"How do we give someone a first credit product when we have no data on them — and they've never used a financial app before?"</p>
+    <p class="cs-callout__label">The core problem</p>
+    <p class="cs-callout__text">"The lenders identified a critical drop-off: the credit validation process was so fragmented and confusing that users gave up before getting approved."</p>
+  </div>
+</section>
+
+<!-- HYPOTHESIS -->
+<section class="cs-section anim">
+  <p class="cs-section__eyebrow">01 — Hypothesis</p>
+  <h2 class="cs-section__title">Three hypotheses about why users were dropping off</h2>
+  <p class="cs-section__body">Before talking to users, we defined what we believed to be true — so that research could confirm or disprove it, not just validate it.</p>
+
+  <div class="cs-callout">
+    <p class="cs-callout__label">Hypothesis 1 · Sign: High abandonment rate</p>
+    <p class="cs-callout__text">The credit validation process has many stages and fields which can cause user fatigue, leading them to abandon the process even before finishing it.</p>
+  </div>
+
+  <div class="cs-callout">
+    <p class="cs-callout__label">Hypothesis 2 · Sign: High abandonment rate</p>
+    <p class="cs-callout__text">The process is confusing because at each screen, a message appears for no apparent reason asking for high-denomination bills — users don't understand why this is required repeatedly throughout the flow.</p>
+  </div>
+
+  <div class="cs-callout">
+    <p class="cs-callout__label">Hypothesis 3 · Sign: Opt-out during process</p>
+    <p class="cs-callout__text">Validating documents by proof of income can be completed faster with UI that surfaces personal income information in context, reducing the cognitive load at the upload step.</p>
   </div>
 </section>
 
 <!-- RESEARCH -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">01 — Discovery & Research</p>
-  <h2 class="cs-section__title">Understanding the informal worker's financial life</h2>
+  <p class="cs-section__eyebrow">02 — Research</p>
+  <h2 class="cs-section__title">User interviews to validate the hypotheses</h2>
   <div class="cs-section__cols cs-section__cols--60-40">
     <div class="cs-section__col">
-      <p class="cs-section__body">We conducted 12 contextual interviews with informal workers (market vendors, taxi drivers, domestic workers) in Bogotá and Medellín. The goal was to understand how they currently manage debt, savings, and financial risk — not to validate our assumptions, but to challenge them.</p>
-      <p class="cs-section__body">Key finding: informal credit networks (prestamistas, natilleras) are built entirely on social trust and verbal contracts. Digital products that feel cold, bureaucratic, or opaque are immediately distrusted.</p>
+      <p class="cs-section__body">Research method: User Interview. I conducted sessions with informal workers and middle-school parents — the two primary user groups applying for credit through Galgo.</p>
+      <p class="cs-section__body">The goal was to understand what they expected from a credit application, what moments broke their trust, and what they did when they didn't understand a step.</p>
     </div>
     <div class="cs-section__col">
-      <div class="cs-image cs-image--flush">
-        <div class="cs-image__placeholder cs-image__placeholder--tall">Research synthesis</div>
+      <div class="cs-callout">
+        <p class="cs-callout__label">Interview questions</p>
+        <p class="cs-callout__text">
+          1. What is the credit validation process to you?<br><br>
+          2. Who have you sought credit or a loan from before?<br><br>
+          3. What do you know about uploading proof of payment or proof of income to a financial app?<br><br>
+          4. What made you decide to apply for credit with Galgo?
+        </p>
       </div>
     </div>
   </div>
-  <div class="cs-grid cs-grid--3">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">User interview notes</div>
-      <p class="cs-image__caption">Field interviews — Bogotá</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Affinity mapping</div>
-      <p class="cs-image__caption">Synthesis session</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">User persona</div>
-      <p class="cs-image__caption">Primary persona — "Rosa"</p>
-    </div>
-  </div>
 </section>
 
-<!-- BENCHMARKING -->
+<!-- CURRENT FLOW -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">02 — Benchmarking</p>
-  <h2 class="cs-section__title">How informal credit works today</h2>
-  <p class="cs-section__body">Before designing anything, we mapped the existing mental models: the informal lender (prestamista), the rotating savings group (natillera), and the neighborhood credit store. Each had a distinct interaction pattern we needed to reference — not copy.</p>
-  <div class="cs-grid cs-grid--2">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Competitor analysis — Nequi, Nu, Addi</div>
-      <p class="cs-image__caption">Digital fintech landscape</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Informal credit mental model map</div>
-      <p class="cs-image__caption">Physical-to-digital translation</p>
-    </div>
-  </div>
-</section>
-
-<!-- UX DESIGN -->
-<section class="cs-section anim">
-  <p class="cs-section__eyebrow">03 — UX Design</p>
-  <h2 class="cs-section__title">Designing for trust, not features</h2>
-  <p class="cs-section__body">The credit application flow had to do two things simultaneously: collect enough data to make a credit decision, and make the user feel safe enough to provide it. Every screen had to earn trust before asking for the next piece of information.</p>
-  <p class="cs-section__body">I designed the flow as a progressive disclosure sequence — starting with the least sensitive data (phone number) and building toward more sensitive inputs (income, purpose of loan) only after establishing clarity about how data is used.</p>
+  <p class="cs-section__eyebrow">03 — Current Flow</p>
+  <h2 class="cs-section__title">Mapping every screen in the existing flow</h2>
+  <p class="cs-section__body">Before redesigning anything, I documented the complete credit validation journey as it existed. Every screen was mapped and evaluated against the hypotheses. The screens highlighted in red are the exact moments where users consistently stopped — too many fields, unclear instructions, or requests that felt unjustified.</p>
   <div class="cs-image">
-    <div class="cs-image__placeholder">User flow — credit application, 12 screens</div>
-    <p class="cs-image__caption">Complete application flow with decision branches</p>
-  </div>
-  <div class="cs-grid cs-grid--2">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--tall">Wireframes — onboarding</div>
-      <p class="cs-image__caption">Lo-fi wireframes, tested in week 2</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--tall">Wireframes — loan dashboard</div>
-      <p class="cs-image__caption">Active loan management states</p>
-    </div>
+    <img src="flow-bad.png" alt="Galgo — Current credit validation flow with problem screens highlighted in red">
+    <p class="cs-image__caption">Current flow — problem screens highlighted in red</p>
   </div>
 </section>
 
-<!-- UI DESIGN -->
+<!-- REDESIGN -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">04 — UI Design</p>
-  <h2 class="cs-section__title">A visual language built on warmth and clarity</h2>
-  <p class="cs-section__body">The UI needed to feel warm, not clinical — approachable enough for first-time app users, but professional enough to convey financial credibility. We used high-contrast typography, generous tap targets (48px minimum), and clear feedback states at every step.</p>
-  <div class="cs-image">
-    <div class="cs-image__placeholder">UI screens — final design system applied</div>
-    <p class="cs-image__caption">High-fidelity screens, mobile-first (375px)</p>
+  <p class="cs-section__eyebrow">04 — Redesign</p>
+  <h2 class="cs-section__title">Applying the findings to redesign the flow</h2>
+  <p class="cs-section__body">Three key changes drove the redesign: better screen order (group related information, don't scatter it), clearer communication (explain why each field is needed at the moment it's asked), and visible progress indicators (users need to know how far they've come and how much is left).</p>
+  <div class="cs-callout">
+    <p class="cs-callout__label">Key changes applied</p>
+    <p class="cs-callout__text">Screen order · Clearer communication · Progress indicators throughout</p>
   </div>
-  <div class="cs-grid cs-grid--4">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Onboarding</div>
-      <p class="cs-image__caption">Screen 1 — Welcome</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Credit form</div>
-      <p class="cs-image__caption">Screen 4 — Amount</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Approval</div>
-      <p class="cs-image__caption">Screen 9 — Approved</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder cs-image__placeholder--portrait">Dashboard</div>
-      <p class="cs-image__caption">Active loan view</p>
-    </div>
+  <div class="cs-image">
+    <img src="flow-good.png" alt="Galgo — Redesigned credit validation flow with improvements highlighted in green">
+    <p class="cs-image__caption">Redesigned flow — improvements highlighted in green</p>
   </div>
 </section>
 
 <!-- RESULTS -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">05 — Results</p>
-  <h2 class="cs-section__title">Outcomes</h2>
+  <p class="cs-section__eyebrow">05 — Outcome</p>
+  <h2 class="cs-section__title">A flow users could actually finish</h2>
+  <p class="cs-section__body">The redesigned credit validation flow addressed all three hypotheses: reduced the number of screens users had to navigate, removed confusing recurring denomination messages, and added progress context that kept users engaged through completion.</p>
   <div class="cs-metrics">
     <div class="cs-metric">
-      <p class="cs-metric__number">73%</p>
-      <p class="cs-metric__label">Application completion rate (up from 41%)</p>
+      <p class="cs-metric__number">3</p>
+      <p class="cs-metric__label">Hypotheses validated through user research</p>
     </div>
     <div class="cs-metric">
-      <p class="cs-metric__number">4.6</p>
-      <p class="cs-metric__label">Average usability score (SUS, n=28)</p>
+      <p class="cs-metric__number">4</p>
+      <p class="cs-metric__label">Research interviews conducted</p>
     </div>
     <div class="cs-metric">
-      <p class="cs-metric__number">12s</p>
-      <p class="cs-metric__label">Average time to understand loan terms</p>
+      <p class="cs-metric__number">↓</p>
+      <p class="cs-metric__label">Friction reduced across the validation flow</p>
     </div>
-  </div>
-  <div class="cs-image">
-    <div class="cs-image__placeholder">Final product — key screens overview</div>
-    <p class="cs-image__caption">Delivered to engineering — complete component library + annotations</p>
   </div>
 </section>
 

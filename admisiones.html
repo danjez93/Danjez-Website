@@ -63,106 +63,74 @@
 <!-- COVER -->
 <div class="cs-cover anim">
   <div class="cs-cover__image">
-    <img src="adm.png" alt="Admisiones by Eccole">
+    <img src="admision/cover-detail-admision.jpg" alt="Admisiones by Eccole">
   </div>
 </div>
 
 <!-- OVERVIEW -->
 <section class="cs-section anim">
   <p class="cs-section__eyebrow">Overview</p>
-  <h2 class="cs-section__title">Replacing paper enrollment — without losing what works</h2>
-  <p class="cs-section__body">Eccole is a startup building software for private K-12 schools in LATAM. Their first bet: digitize school admissions. The problem was that admissions at private schools in the region is deeply relational — it's not just a form, it's a conversation with the school director, references from parents, and a physical tour.</p>
-  <p class="cs-section__body">My role was to run discovery — understand what "admissions" really means for schools and parents — and then design an MVP that digitizes the right parts without stripping out the relationship layer that makes private school admissions work.</p>
+  <h2 class="cs-section__title">School management platform for finding the ideal educational institution</h2>
+  <p class="cs-section__body">School management platform that helps parents find the ideal educational institution for their children based on their needs.</p>
   <div class="cs-callout">
-    <p class="cs-callout__label">Starting Point</p>
-    <p class="cs-callout__text">No product existed. No designs. Just a hypothesis: "schools want to digitize admissions." My job was to find out if that was true, and if so, which parts.</p>
+    <p class="cs-callout__label">Business Objective</p>
+    <p class="cs-callout__text">Develop an application with an educational marketplace and admissions platform to carry out and streamline the admissions process for applicants to educational institutions, while complying with design, user experience, and functionality guidelines.</p>
   </div>
 </section>
 
-<!-- DISCOVERY -->
+<!-- RESEARCH -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">01 — Discovery</p>
-  <h2 class="cs-section__title">What does "admissions" actually mean?</h2>
-  <p class="cs-section__body">I ran a two-week discovery sprint: 8 interviews with school administrators, 6 with parents who had recently enrolled a child, and a workflow audit of the physical admissions process at 3 schools.</p>
-  <p class="cs-section__body">The key insight: schools don't want to eliminate paper — they want to eliminate the follow-up. The most painful part of admissions is tracking which families have submitted which documents, and chasing them down. That's the problem worth solving.</p>
-  <div class="cs-grid cs-grid--2">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Discovery interviews — synthesis wall</div>
-      <p class="cs-image__caption">Affinity map — 14 school admissions pain points</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Current-state journey map — 23-step paper process</div>
-      <p class="cs-image__caption">Physical admissions workflow documented</p>
-    </div>
+  <p class="cs-section__eyebrow">01 — Research</p>
+  <h2 class="cs-section__title">Understanding what parents really need</h2>
+  <p class="cs-section__body">The research methodology used to identify findings, insights, and ideas consisted of interviews with users, specifically five parents.</p>
+  <p class="cs-section__body">From the interviews, we gathered valuable information about what parents consider when searching for the ideal school based on their needs.</p>
+  <div class="cs-callout">
+    <p class="cs-callout__label">1</p>
+    <p class="cs-callout__text">The distance from my home to the school is a very important factor.</p>
+  </div>
+  <div class="cs-callout">
+    <p class="cs-callout__label">2</p>
+    <p class="cs-callout__text">The different fees should be well organized (enrollment, monthly tuition, transportation, cafeteria, uniforms, books, and supplies), since if there are hidden costs, it could discourage me from choosing that school.</p>
+  </div>
+  <div class="cs-callout">
+    <p class="cs-callout__label">3</p>
+    <p class="cs-callout__text">The factors why I would choose a good school are: quality, a strong academic level, and that it is highly recommended.</p>
+  </div>
+  <div class="cs-callout">
+    <p class="cs-callout__label">4</p>
+    <p class="cs-callout__text">The factors why I would choose a good school are: quality, a strong academic level, and that it is highly recommended.</p>
+  </div>
+  <div class="cs-image" style="background: #fff;">
+    <img src="admision/user-journey.png" alt="Admisiones — User Journey" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">User journey — parent experience searching for a school</p>
   </div>
 </section>
 
-<!-- DEFINITION -->
+<!-- SITE MAP -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">02 — Definition</p>
-  <h2 class="cs-section__title">Scoping the MVP — what to build first</h2>
-  <p class="cs-section__body">With the discovery findings, I ran a prioritization session with the Eccole founders. We mapped features against impact (what reduces the most pain) and effort (what can we build in 8 weeks). The MVP scope emerged: a digital application form, document upload, and an admin tracking dashboard.</p>
-  <div class="cs-image">
-    <div class="cs-image__placeholder">Feature prioritization matrix — impact vs. effort</div>
-    <p class="cs-image__caption">MVP scope definition — 6 features selected</p>
+  <p class="cs-section__eyebrow">02 — Information Architecture</p>
+  <h2 class="cs-section__title">Site Map</h2>
+  <div class="cs-image" style="background: none; box-shadow: none; border-radius: 0; overflow: visible;">
+    <img src="admision/site-map.png" alt="Admisiones — Site Map" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Site map — platform structure and navigation hierarchy</p>
   </div>
 </section>
 
-<!-- PROTOTYPE -->
+<!-- FINAL DESIGN -->
 <section class="cs-section anim">
-  <p class="cs-section__eyebrow">03 — Prototype & Testing</p>
-  <h2 class="cs-section__title">Testing assumptions before building</h2>
-  <p class="cs-section__body">I built a clickable prototype in Figma and ran two rounds of usability testing — one with school administrators, one with parents. The biggest surprise from testing: parents expected to upload photos of physical documents (not fill out digital forms). The flow had to accommodate both mental models.</p>
-  <div class="cs-grid cs-grid--2">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Lo-fi prototype — parent application flow</div>
-      <p class="cs-image__caption">Round 1 prototype — 8 screens, tested with 5 parents</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Lo-fi prototype — admin tracking view</div>
-      <p class="cs-image__caption">Admin dashboard — first iteration</p>
-    </div>
+  <p class="cs-section__eyebrow">03 — Final Design</p>
+  <h2 class="cs-section__title">The product, fully designed</h2>
+  <div class="cs-image" style="background: #fff;">
+    <img src="admision/homepage-admisiones.png" alt="Admisiones — Homepage" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">Homepage — school discovery and featured institutions</p>
   </div>
-</section>
-
-<!-- MVP -->
-<section class="cs-section anim">
-  <p class="cs-section__eyebrow">04 — MVP Design</p>
-  <h2 class="cs-section__title">The final product</h2>
-  <p class="cs-section__body">The MVP launched with two views: a parent-facing web form for submitting the application and documents, and an admin dashboard for tracking application status and sending follow-up nudges. The design prioritized mobile-web for parents (most accessed on phone) and desktop for administrators.</p>
-  <div class="cs-image">
-    <div class="cs-image__placeholder">MVP — parent application form (mobile web)</div>
-    <p class="cs-image__caption">Parent flow — 5-step application, mobile-first</p>
+  <div class="cs-image" style="background: #fff;">
+    <img src="admision/searcher-admisiones.png" alt="Admisiones — Search" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">School search — filters by distance, fees, and academic level</p>
   </div>
-  <div class="cs-grid cs-grid--2">
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Admin dashboard — application tracker</div>
-      <p class="cs-image__caption">Status board with document checklist</p>
-    </div>
-    <div class="cs-image cs-image--flush">
-      <div class="cs-image__placeholder">Document upload — camera capture flow</div>
-      <p class="cs-image__caption">Mobile photo upload with cropping</p>
-    </div>
-  </div>
-</section>
-
-<!-- RESULTS -->
-<section class="cs-section anim">
-  <p class="cs-section__eyebrow">05 — Results</p>
-  <h2 class="cs-section__title">Launch outcomes</h2>
-  <div class="cs-metrics">
-    <div class="cs-metric">
-      <p class="cs-metric__number">3</p>
-      <p class="cs-metric__label">Schools using the MVP at launch</p>
-    </div>
-    <div class="cs-metric">
-      <p class="cs-metric__number">89%</p>
-      <p class="cs-metric__label">Parent application completion rate</p>
-    </div>
-    <div class="cs-metric">
-      <p class="cs-metric__number">−70%</p>
-      <p class="cs-metric__label">Admin time spent on document follow-up</p>
-    </div>
+  <div class="cs-image" style="background: #fff;">
+    <img src="admision/detail-admisiones.png" alt="Admisiones — School Detail" style="width: 100%; height: auto; display: block;">
+    <p class="cs-image__caption">School detail — complete information and admissions flow</p>
   </div>
 </section>
 
