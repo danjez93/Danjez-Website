@@ -1,0 +1,124 @@
+/* ============================================================
+   DANJEZ DESIGN SYSTEM — Tab Components
+   Extraído de Figma: Danjez Design System / Tabs
+   ============================================================ */
+
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root {
+  --dz-accent:           #d91529;
+  --dz-text-primary:     #2f2f33;
+  --dz-text-disabled:    #75747a;
+  --dz-border-primary:   #f0f2f7;
+  --dz-surface-primary:  #fafafc;
+  --dz-radius-md:        8px;
+  --dz-stroke:           1px;
+}
+
+/* ============================================================
+   TAB — Line type (navegación horizontal)
+   Usage: <div class="tab-group tab-group--line" role="tablist">
+   ============================================================ */
+.tab-group {
+  display: flex;
+  align-items: center;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 1rem;        /* 16px */
+  font-weight: 600;
+  line-height: 1.5rem;    /* 24px */
+  white-space: nowrap;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  text-decoration: none;
+}
+
+/* --- Line type --- */
+.tab--line {
+  color: var(--dz-text-primary);
+  border-bottom: var(--dz-stroke) solid transparent;
+}
+
+.tab--line:hover {
+  color: var(--dz-accent);
+}
+
+.tab--line[aria-selected="true"],
+.tab--line.is-active {
+  color: var(--dz-accent);
+  border-bottom-color: var(--dz-accent);
+}
+
+/* --- Quad type (pill/card) --- */
+.tab--quad {
+  color: var(--dz-text-primary);
+  border-radius: var(--dz-radius-md);
+  border: var(--dz-stroke) solid transparent;
+}
+
+.tab--quad[aria-selected="true"],
+.tab--quad.is-active {
+  border-color: var(--dz-border-primary);
+}
+
+.tab--quad:disabled,
+.tab--quad[aria-disabled="true"] {
+  color: var(--dz-text-disabled);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ============================================================
+   BOTTOM TAB BAR — navegación inferior móvil
+   Usage: <nav class="bottom-tab-bar">
+   ============================================================ */
+.bottom-tab-bar {
+  display: flex;
+  align-items: stretch;
+  background: var(--dz-surface-primary);
+}
+
+.bottom-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 90px;
+  padding: 12px 0 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--dz-text-primary);
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 1rem;        /* 16px */
+  font-weight: 600;
+  line-height: 1.5rem;    /* 24px */
+  text-align: center;
+  transition: color 0.15s ease;
+  text-decoration: none;
+}
+
+.bottom-tab[aria-pressed="true"],
+.bottom-tab.is-active {
+  color: var(--dz-accent);
+}
+
+.bottom-tab__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.bottom-tab__label {
+  display: block;
+}

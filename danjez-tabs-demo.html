@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danjez Design System — Tabs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="danjez-tabs.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #fff;
+      font-family: 'Poppins', system-ui, sans-serif;
+    }
+    .demo-section {
+      margin-bottom: 48px;
+    }
+    .demo-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #aeaeb2;
+      margin: 0 0 16px;
+    }
+    .demo-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .demo-frame {
+      display: inline-flex;
+      border: 1px dashed #e5e5e7;
+      border-radius: 4px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =====================================================
+       TAB — Line type
+       ===================================================== -->
+  <div class="demo-section">
+    <p class="demo-label">Tab · Line — todos los estados</p>
+    <div class="demo-row">
+
+      <!-- default -->
+      <div class="demo-frame">
+        <div class="tab-group" role="tablist" aria-label="Ejemplo line default">
+          <button class="tab tab--line" role="tab" aria-selected="false">Open Positions</button>
+        </div>
+      </div>
+
+      <!-- hover (forzado con clase) -->
+      <div class="demo-frame">
+        <div class="tab-group" role="tablist" aria-label="Ejemplo line hover">
+          <button class="tab tab--line" role="tab" aria-selected="false" style="color: var(--dz-accent);">Open Positions</button>
+        </div>
+      </div>
+
+      <!-- active / focus -->
+      <div class="demo-frame">
+        <div class="tab-group" role="tablist" aria-label="Ejemplo line active">
+          <button class="tab tab--line is-active" role="tab" aria-selected="true">Open Positions</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =====================================================
+       TAB — Quad type
+       ===================================================== -->
+  <div class="demo-section">
+    <p class="demo-label">Tab · Quad — todos los estados</p>
+    <div class="demo-row">
+
+      <!-- default/active (con borde) -->
+      <div class="demo-frame">
+        <div class="tab-group" role="tablist" aria-label="Ejemplo quad default">
+          <button class="tab tab--quad is-active" role="tab" aria-selected="true">Open Positions</button>
+        </div>
+      </div>
+
+      <!-- disabled -->
+      <div class="demo-frame">
+        <div class="tab-group" role="tablist" aria-label="Ejemplo quad disabled">
+          <button class="tab tab--quad" role="tab" disabled aria-disabled="true">Open Positions</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =====================================================
+       TAB — Uso real: grupo completo con JavaScript
+       ===================================================== -->
+  <div class="demo-section">
+    <p class="demo-label">Tab · Line — grupo interactivo</p>
+    <div class="tab-group" role="tablist" aria-label="Posiciones" id="tabs-line">
+      <button class="tab tab--line is-active" role="tab" aria-selected="true" data-tab="all">All</button>
+      <button class="tab tab--line" role="tab" aria-selected="false" data-tab="design">Design</button>
+      <button class="tab tab--line" role="tab" aria-selected="false" data-tab="dev">Development</button>
+      <button class="tab tab--line" role="tab" aria-selected="false" data-tab="pm">Product</button>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       BOTTOM TAB BAR
+       ===================================================== -->
+  <div class="demo-section">
+    <p class="demo-label">Bottom Tab Bar — estados off / on</p>
+    <div class="demo-frame">
+      <nav class="bottom-tab-bar" aria-label="Navegación principal">
+
+        <!-- off -->
+        <button class="bottom-tab" aria-pressed="false">
+          <svg class="bottom-tab__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          <span class="bottom-tab__label">Message</span>
+        </button>
+
+        <!-- on -->
+        <button class="bottom-tab is-active" aria-pressed="true">
+          <svg class="bottom-tab__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          <span class="bottom-tab__label">Message</span>
+        </button>
+
+      </nav>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       JavaScript — tabs interactivos
+       ===================================================== -->
+  <script>
+    document.querySelectorAll('[role="tablist"]').forEach(tablist => {
+      tablist.querySelectorAll('[role="tab"]').forEach(tab => {
+        tab.addEventListener('click', () => {
+          tablist.querySelectorAll('[role="tab"]').forEach(t => {
+            t.setAttribute('aria-selected', 'false');
+            t.classList.remove('is-active');
+          });
+          tab.setAttribute('aria-selected', 'true');
+          tab.classList.add('is-active');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
